@@ -12,6 +12,12 @@
   --color-background: #000000;
   --color-text: #f2f2f2;
   --color-muted: #828280;
+}
 
-  --font-montserrat: 'Montserrat';
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
