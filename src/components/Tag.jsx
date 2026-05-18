@@ -1,4 +1,4 @@
-import "../styles/tag.css";
+import "../styles/Tag.css";
 
 const Tag = ({ label, rotation = "", reverse = false }) => {
   return (
