@@ -63,7 +63,7 @@
         "subtitle": "Peer Tutoring System",
         "org": "Senior Project · University",
         "period": "2024 - 2025",
-        "image": "src/assets/images/peertube-cover.png",
+        "image": "/images/peertube-cover.png",
         "color": "bg-primary/10",
         "description": "A scalable peer tutoring platform with session management, financial dashboards, refund and report features, and payment integration.",
         "bullets": [
@@ -83,7 +83,7 @@
         "subtitle": "Learning Analytic System",
         "org": "Personal Project",
         "period": "2024",
-        "image": "src/assets/images/trideo-cover.png",
+        "image": "/images/trideo-cover.png",
         "color": "bg-text/5",
         "description": "A full-stack video learning platform with admin dashboards to track user activities — visits, views, and completions.",
         "bullets": [
@@ -103,7 +103,7 @@
         "subtitle": "Mobile App",
         "org": "Personal Project",
         "period": "2023",
-        "image": "src/assets/images/asset-borrowing-cover.png",
+        "image": "/images/asset-borrowing-cover.png",
         "color": "bg-primary/5",
         "description": "A mobile app for borrowing and returning assets, with role-based workflows for users, lecturers, and staff.",
         "bullets": [
@@ -122,7 +122,7 @@
         "subtitle": "ML Model",
         "org": "Academic Project",
         "period": "2023",
-        "image": "src/assets/images/salary-prediction-cover.png",
+        "image": "/images/salary-prediction-cover.png",
         "color": "bg-text/5",
         "description": "A machine learning model that predicts salaries using an Artificial Neural Network, enhanced with ensemble and dimensionality reduction techniques.",
         "bullets": [
@@ -151,7 +151,7 @@
         "bgColor": "#d4e8ff",
         "borderColor": "#828280",
         "textColor": "#0c0c0c",
-        "logo": "src/assets/images/manatal-logo.png"
+        "logo": "/images/manatal-logo.png"
       },
       {
         "period": "Aug 2024 - Dec 2025",
@@ -161,7 +161,7 @@
         "bgColor": "#8b1d1d",
         "borderColor": "#828280",
         "textColor": "#f0f7fd",
-        "logo": "src/assets/images/mfu-logo.png"
+        "logo": "/images/mfu-logo.png"
       },
       {
         "period": "May 2021 - Jul 2022",
@@ -171,7 +171,7 @@
         "bgColor": "#f0f7fd",
         "borderColor": "#828280",
         "textColor": "#0c0c0c",
-        "logo": "src/assets/images/yoma-logo.png"
+        "logo": "/images/yoma-logo.png"
       }
     ]
   },
