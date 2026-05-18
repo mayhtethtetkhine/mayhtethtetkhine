@@ -180,10 +180,11 @@
     "heading": "Beyond the",
     "headingAccent": "codes.",
     "bio": [
+      "My full name is Nyi Wai Yan Tun, but you can call me Romand.",
       "I like the feeling when something clicks into place. I like systems that make sense, code that's easy to read, and teams that communicate well.",
       "Outside of work, I'm probably tinkering with a side project, playing too much chess, or trying to understand how something works just because I'm curious."
     ],
-    "photo": null,
+    "photo": "/images/my-photo.png",
     "facts": [
       { "label": "Based In",          "value": "Bangkok, Thailand — open to relocation" },
       { "label": "Languages",         "value": "Burmese (native), Thai (basic), English (fluent)" },

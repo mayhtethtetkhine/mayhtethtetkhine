@@ -21,3 +21,12 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+html, body {
+  background-color: #000000;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
