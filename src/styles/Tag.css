@@ -27,7 +27,7 @@
   background: conic-gradient(
     from var(--angle),
     transparent 60%,
-    #1ab8b8 80%,
+    #582180 80%,
     transparent 100%
   );
   animation: spin-angle 6s linear infinite;
@@ -39,7 +39,7 @@
   position: absolute;
   inset: 1px;
   border-radius: 9999px;
-  background: #000000;
+  background: #dbcdf6;
   z-index: -1;
 }
 

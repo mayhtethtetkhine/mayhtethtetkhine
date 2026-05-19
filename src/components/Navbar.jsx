@@ -11,7 +11,7 @@ const Navbar = ({ nav_links, activeLink, onLinkClick }) => {
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="tracking-[0.25em] text-sm text-text cursor-pointer transition-opacity uppercase font-mono"
       >
-        Romand<span className="text-primary">.</span>
+        May<span className="text-primary">.</span>
       </button>
 
       {/* Desktop links */}
@@ -20,7 +20,7 @@ const Navbar = ({ nav_links, activeLink, onLinkClick }) => {
           <li key={href}>
             <button
               onClick={() => onLinkClick(href)}
-              className={`uppercase text-xs tracking-[0.12em] transition-colors duration-200 font-mono cursor-pointer hover:text-text ${activeLink === href ? "text-text" : "text-muted"}`}
+              className={`uppercase text-xs tracking-[0.12em] transition-colors duration-200 font-mono cursor-pointer hover:text-text hover:font-semibold ${activeLink === href ? "text-text font-semibold" : "text-muted font-normal"}`}
             >
               {label}
             </button>

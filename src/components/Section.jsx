@@ -1,10 +1,12 @@
-const Section = ({ id, title, children }) => {
+const Section = ({ id, title, children }) =>
+{
   return (
     <section
       id={id}
       className="px-8 md:px-10 py-24 relative"
     >
       {/* Sticky title */}
+
       {title && (
         <div className="sticky top-17 z-10 mb-12">
           <div className="flex items-center gap-4">

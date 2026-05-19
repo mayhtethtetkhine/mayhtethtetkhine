@@ -8,10 +8,10 @@
 }
 
 @theme {
-  --color-primary: #1ab8b8;
-  --color-background: #000000;
-  --color-text: #f2f2f2;
-  --color-muted: #828280;
+  --color-primary: #582180;
+  --color-background: #e6e6fa;
+  --color-text: #1f1f1f;
+  --color-muted: #4b3d4f;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
