@@ -10,7 +10,7 @@ import data from "./data.json";
 
 const NAV_LINKS = [
   { label: "Skills",      href: "what-i-do"      },
-  { label: "Selected Projects",  href: "selected-work"  },
+  { label: "Projects",  href: "selected-work"  },
   { label: "Experience",     href: "experience"     },
   { label: "About me", href: "meet-you"     },
   { label: "Contact",  href: "connect"        },
@@ -61,7 +61,7 @@ export default function App() {
       <ConnectSection     data={data.connect} email={data.meta.email} tinytitle = {NAV_LINKS[4].label} />
 
       {/* ── FOOTER ── */}
-      <footer className="px-8 md:px-20 py-8 border-t border-text/10 flex items-center justify-between text-muted text-xs">
+      <footer className="px-8 md:px-20 py-8 border-t border-text/10 flex items-center justify-between text-muted text-xs font-mono">
         <span>{data.meta.copyright}</span>
         <span>{data.meta.footerNote}</span>
       </footer>

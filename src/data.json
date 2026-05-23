@@ -81,7 +81,7 @@
   },
   "work": {
     "heading": "My proudest ",
-    "headingAccent": "research projects. ",
+    "headingAccent": "research & projects. ",
     "subheading": "A few projects I'm proud of, from university work to personal builds. Each one taught me something new.",
     "projects": [
       {
@@ -153,59 +153,94 @@
         ]
       },
       {
-        "id": "asset",
-        "name": "Asset Borrowing",
-        "subtitle": "Mobile App",
+        "id": "license",
+        "name": "ANPR System",
+        "subtitle": "Rapid Miner",
+        "org": "Computer Vision",
+        "period": "2023",
+        "image": "/images/asset-borrowing-cover.png",
+        "color": "bg-primary/5",
+        "description": "A computer vision system for automatic license plate recognition (ANPR) using YOLOv8 and OCR, designed to identify vehicles, localize license plates, and extract plate numbers from images.",
+        "bullets": [
+          "Built a desktop-based license plate recognition pipeline using Python, YOLOv8, and EasyOCR to detect vehicles, localize license plates, and extract plate text from images.",
+          "Developed an image preprocessing workflow including grayscale conversion, histogram equalization, sharpening, Gaussian blur, morphological closing, and noise reduction to improve OCR and detection performance under varying image conditions.",
+          "Implemented automated result logging with CSV export, annotated image generation, and a customtkinter interface for image upload, visualization, and end-to-end detection execution."
+        ],
+        "tags": [
+          "Python",
+          "YOLOv8",
+          "Computer Vision",
+          "OCR",
+          "OpenCV"
+        ],
+        "links": [ 
+          {
+            "label": "GitHub",
+            "href": "https://github.com/mayhtethtetkhine/License_plate_reader.git"
+          },
+          {
+            "label": "Document",
+            "href": "https://drive.google.com/file/d/1W4zpOdjRKsgdWKDcnxSUn1FVuGLXukVW/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "id": "churn",
+        "name": "Churn Analysis",
+        "subtitle": "Rapid Miner",
         "org": "Personal Project",
         "period": "2023",
         "image": "/images/asset-borrowing-cover.png",
         "color": "bg-primary/5",
-        "description": "A mobile app for borrowing and returning assets, with role-based workflows for users, lecturers, and staff.",
+        "description": "A customer churn classification project focused on identifying customers at risk of leaving a bank using business analytics and machine learning techniques in a low-code environment.",
         "bullets": [
-          "Users can book, borrow, return assets, with lecturer roles managing approvals and staff managing takeout and returns.",
-          "Implemented secure JWT-based authentication, email OTP verification, and automated asset status updates with node-schedule.",
-          "Used Cloudinary and Multer for image uploads."
+          "Developed a churn prediction workflow in RapidMiner to classify customer retention risk using banking and demographic data.",
+          "Handled class imbalance using MetaCost and cost-sensitive learning techniques, with a strong focus on improving prediction precision for business decision support.",
+          "Achieved precision scores of 84.5% for churn prediction and 85.8% for non-churn prediction through evaluation and model optimization workflows."
         ],
         "tags": [
-          "Flutter",
-          "Node.js",
-          "MySQL",
-          "JWT"
+          "RapidMiner",
+          "Churn Analysis",
+          "Classification",
+          "Business Analytics",
+          "Imbalanced Data"
         ],
         "links": [
           {
-            "label": "GitHub",
-            "href": "https://github.com/NyiWaiYanHtoon/Asset-borrowing-system-mobile/blob/main/README.md"
+            "label": "Slides",
+            "href": "https://docs.google.com/presentation/d/1kuYiNKDXP_rziljg9vk1DnAWRZJ-4FEp/edit?usp=sharing&ouid=104581161987429749111&rtpof=true&sd=true"
           }
         ]
       },
       {
         "id": "salary",
-        "name": "Salary Prediction",
-        "subtitle": "ML Model",
+        "name": "Salary Classification",
+        "subtitle": "ANN Model",
         "org": "Academic Project",
-        "period": "2023",
+        "period": "2022",
         "image": "/images/salary-prediction-cover.png",
         "color": "bg-text/5",
-        "description": "A machine learning model that predicts salaries using an Artificial Neural Network, enhanced with ensemble and dimensionality reduction techniques.",
+        "description": "A binary classification model that predicts whether an individual's salary falls into a high- or low-income category using demographic and personal data.",
         "bullets": [
-          "Developed a salary prediction model using ANN, enhanced with bagging and PCA for improved performance and robustness."
+          "Built and evaluated an Artificial Neural Network (ANN) classifier on a dataset of over 20,000 individuals using Python and Scikit-learn workflows.",
+          "Applied preprocessing and dimensionality reduction techniques including PCA, and experimented with ensemble strategies to improve model robustness and generalization.",
+          "Achieved an F1-score of 79.75% for the high-income class, with performance evaluated using confusion matrix analysis and classification metrics."
         ],
         "tags": [
           "Python",
           "ANN",
+          "Classification",
           "PCA",
-          "Docker",
           "Scikit-learn"
         ],
         "links": [
           {
             "label": "GitHub",
-            "href": "https://github.com/NyiWaiYanHtoon/salary-prediction-model.git"
+            "href": "https://github.com/mayhtethtetkhine/ML-SalaryPredictionSystem.git"
           },
           {
             "label": "Slides",
-            "href": "https://docs.google.com/presentation/d/111fW_aGrVDMYpFLJrIQ0OEgwRPXkohCV5xM88igpShs/edit?usp=sharing"
+            "href": "https://docs.google.com/presentation/d/14M3_IrfiMWSFrFp2uRkWDXNKd-BweY5_/edit?usp=drive_link&ouid=104581161987429749111&rtpof=true&sd=true"
           }
         ]
       }
