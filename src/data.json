@@ -2,8 +2,8 @@
   "meta": {
     "email": "maykay2905@gmail.com",
     "linkedin": "#",
-    "copyright": "© 2026 Romand",
-    "footerNote": "Designed & built by ROMAND"
+    "copyright": "© 2026 R & M ",
+    "footerNote": "Designed & built by R & M"
   },
   "hero": {
     "heading": [
@@ -20,9 +20,9 @@
     ]
   },
   "skills": {
-    "heading": "Tools I know.",
-    "headingAccent": "Problems I solve.",
-    "subheading": "I work across the full stack, from designing interfaces to building APIs to deploying on the cloud. Here's what I reach for depending on the job.",
+    "heading": "Tools, Techniques",
+    "headingAccent": "& Systems",
+    "subheading": "My work combines machine learning, experimentation, and engineering systems to solve reliability, optimization, and variability challenges in real-world environments.",
     "items": [
       {
         "title": "ML & Modeling",
@@ -80,8 +80,8 @@
     ]
   },
   "work": {
-    "heading": "Things I have",
-    "headingAccent": "actually built.",
+    "heading": "My proudest ",
+    "headingAccent": "research projects. ",
     "subheading": "A few projects I'm proud of, from university work to personal builds. Each one taught me something new.",
     "projects": [
       {

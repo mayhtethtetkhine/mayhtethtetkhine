@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./assets/fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
+  font-family: 'Archivo';
+  src: url('/fonts/Archivo-VariableFont_wdth,wght.woff2') format('woff2');
   font-weight: 400 700;
   font-display: swap;
 }
@@ -12,6 +12,7 @@
   --color-background: #e6e6fa;
   --color-text: #1f1f1f;
   --color-muted: #4b3d4f;
+  --font-archivo: 'Archivo', san-serif;
 }
 
 .scrollbar-hide::-webkit-scrollbar {

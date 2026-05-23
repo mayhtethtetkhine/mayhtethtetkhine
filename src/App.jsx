@@ -9,11 +9,11 @@ import ConnectSection from "./components/ConnectSection";
 import data from "./data.json";
 
 const NAV_LINKS = [
-  { label: "What I Do",      href: "what-i-do"      },
-  { label: "Selected Work",  href: "selected-work"  },
+  { label: "Skills",      href: "what-i-do"      },
+  { label: "Selected Projects",  href: "selected-work"  },
   { label: "Experience",     href: "experience"     },
-  { label: "Nice to Meet You", href: "meet-you"     },
-  { label: "Let's Connect",  href: "connect"        },
+  { label: "About me", href: "meet-you"     },
+  { label: "Contact",  href: "connect"        },
 ];
 
 function smoothScrollTo(id) {
@@ -41,7 +41,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="bg-background text-text min-h-screen font-montserrat">
+    <div className="bg-background text-text min-h-screen font-archivo">
 
       {/* ── NAVBAR ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-5 backdrop-blur-md bg-background/60 border-b border-text/5">
@@ -54,11 +54,11 @@ export default function App() {
 
       {/* ── SECTIONS ── */}
       <HeroSection        data={data.hero}       />
-      <SkillsSection      data={data.skills}     />
-      <SelectedWorkSection data={data.work}      />
-      <ExperienceSection  data={data.experience} />
-      <AboutSection       data={data.about}      />
-      <ConnectSection     data={data.connect} email={data.meta.email} />
+      <SkillsSection      data={data.skills} tinytitle = {NAV_LINKS[0].label}    />
+      <SelectedWorkSection data={data.work}  tinytitle = {NAV_LINKS[1].label }   />
+      <ExperienceSection  data={data.experience} tinytitle = {NAV_LINKS[2].label} />
+      <AboutSection       data={data.about} tinytitle = {NAV_LINKS[3].label }  />
+      <ConnectSection     data={data.connect} email={data.meta.email} tinytitle = {NAV_LINKS[4].label} />
 
       {/* ── FOOTER ── */}
       <footer className="px-8 md:px-20 py-8 border-t border-text/10 flex items-center justify-between text-muted text-xs">
