@@ -77,7 +77,7 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
 
       {/* Projects list */}
       <div className="flex flex-col gap-32">
-        {projects.map(({ id, name, subtitle, org, period, description, bullets, tags, links, color, image }) => (
+        {projects.map(({ id, name, subtitle, org, description, bullets, tags, links, color, image }) => (
           <div
             key={id}
             ref={(el) => (projectRefs.current[id] = el)}
@@ -96,9 +96,9 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
 
             {/* Right — content */}
             <div className="flex flex-col gap-5">
-              <p className="text-muted text-xs tracking-wide">{org} · {period}</p>
+              <p className="text-muted text-xs tracking-wide">{org}</p>
 
-              <h3 className="text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-2xl md:text-3xl font-bold leading-tight">
                 {name}<span className="text-primary"> · </span>{subtitle}
               </h3>
 

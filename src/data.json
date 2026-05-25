@@ -80,17 +80,16 @@
     ]
   },
   "work": {
-    "heading": "My proudest ",
-    "headingAccent": "research & projects. ",
+    "heading": "Projects",
+    "headingAccent": "I chose to share. ",
     "subheading": "A few projects I'm proud of, from university work to personal builds. Each one taught me something new.",
     "projects": [
       {
-        "id": "peertube",
-        "name": "Peertube",
-        "subtitle": "Peer Tutoring System",
-        "org": "Senior Project · University",
-        "period": "2024 - 2025",
-        "image": "/images/peertube-cover.png",
+        "id": "synthetic",
+        "name": "Imbalance Classification",
+        "subtitle": "Resampler Benchmarking",
+        "org": "AI/ML",
+        "image": "",
         "color": "bg-primary/10",
         "description": "A scalable peer tutoring platform with session management, financial dashboards, refund and report features, and payment integration.",
         "bullets": [
@@ -120,45 +119,13 @@
           }
         ]
       },
+     
       {
-        "id": "trideo",
-        "name": "Trideo",
-        "subtitle": "Learning Analytic System",
-        "org": "Personal Project",
-        "period": "2024",
-        "image": "/images/trideo-cover.png",
-        "color": "bg-text/5",
-        "description": "A full-stack video learning platform with admin dashboards to track user activities — visits, views, and completions.",
-        "bullets": [
-          "Built full-stack video learning platform with admin dashboards to track user activities (visits, views, completions).",
-          "Implemented Google OAuth (Passport.js), video uploads via Cloudinary and Multer, and event streaming with managed Kafka (Confluent Cloud). Used Prisma ORM with MongoDB Atlas.",
-          "Deployed frontend on Vercel, backend on Render, Kafka worker on Fly.io."
-        ],
-        "tags": [
-          "Vue.js",
-          "Node.js",
-          "MongoDB",
-          "Kafka",
-          "Prisma"
-        ],
-        "links": [
-          {
-            "label": "GitHub",
-            "href": "https://github.com/NyiWaiYanHtoon?tab=repositories&q=trideo-learning"
-          },
-          {
-            "label": "Live",
-            "href": "https://trideo.vercel.app/"
-          }
-        ]
-      },
-      {
-        "id": "license",
+        "id": "anpr",
         "name": "ANPR System",
-        "subtitle": "Rapid Miner",
+        "subtitle": "YOLOv8",
         "org": "Computer Vision",
-        "period": "2023",
-        "image": "/images/asset-borrowing-cover.png",
+        "image": "",
         "color": "bg-primary/5",
         "description": "A computer vision system for automatic license plate recognition (ANPR) using YOLOv8 and OCR, designed to identify vehicles, localize license plates, and extract plate numbers from images.",
         "bullets": [
@@ -189,8 +156,7 @@
         "name": "Churn Analysis",
         "subtitle": "Rapid Miner",
         "org": "Business Data Analytics",
-        "period": "2023",
-        "image": "/images/asset-borrowing-cover.png",
+        "image": "",
         "color": "bg-primary/5",
         "description": "A customer churn classification project focused on identifying customers at risk of leaving a bank using business analytics and machine learning techniques in a low-code environment.",
         "bullets": [
@@ -215,8 +181,7 @@
         "id": "salary",
         "name": "Salary Classification",
         "subtitle": "ANN Model",
-        "org": "AI/ML Project",
-        "period": "2022",
+        "org": "AI/ML",
         "image": "/images/salary-prediction-cover.png",
         "color": "bg-text/5",
         "description": "A binary classification model that predicts whether an individual's salary falls into a high- or low-income category using demographic and personal data.",
@@ -243,43 +208,47 @@
           }
         ]
       }
+     
     ]
   },
   "experience": {
-    "heading": "Building things.",
-    "headingAccent": "Shipping things.",
-    "headingSuffix": "Learning things.",
+    "heading": "Professional & Research",
+    "headingAccent": "Experience",
+    "headingSuffix": "",
     "subheading": "I've worked across universities, banks, and startups — writing code, supporting teams, and figuring out how real software gets built and shipped.",
     "items": [
       {
-        "period": "Jan 2026 - Present",
-        "position": "Software Engineer Intern",
-        "org": "Manatal",
+        "period": "Aug 2025 - Present",
+        "position": "Data Scientist",
+        "org": "Seagate Technology TH",
         "description": "Worked in an Agile team handling tickets via Jira across the full dev lifecycle. Delivered features, bug fixes, and customer-driven hotfixes to production. Built LLM-powered pipelines and microservice workflows for scalable data processing.",
-        "bgColor": "#d4e8ff",
-        "borderColor": "#828280",
+        "bgColor": "#eff7eb",
+        "borderColor": "#b7a7b9",
         "textColor": "#0c0c0c",
-        "logo": "/images/manatal-logo.png"
+        "logo": "/images/seagate-logo.png",
+        "type": "Contract"
       },
       {
-        "period": "Aug 2024 - Dec 2025",
-        "position": "Programming Teaching Assistant",
-        "org": "Mae Fah Luang University",
+        "period": "Jan 2025 - Apr 2025",
+        "position": "Data Scientist Intern",
+        "org": "Seagate Technology TH",
         "description": "Supported students in Mobile and Web development labs, offering hands-on guidance and strengthening problem-solving and communication skills through diverse one-on-one interactions.",
-        "bgColor": "#8b1d1d",
-        "borderColor": "#828280",
-        "textColor": "#f0f7fd",
-        "logo": "/images/mfu-logo.png"
+        "bgColor": "#f3faf0",
+        "borderColor": "#b7a7b9",
+        "textColor": "#0c0c0c",
+        "logo": "/images/seagate-logo.png",
+        "type": "Internship"
       },
       {
         "period": "May 2021 - Jul 2022",
-        "position": "End-user IT Support",
-        "org": "YOMA Bank",
+        "position": "Research Assistant",
+        "org": "Mae Fah Luang University",
         "description": "Delivered end-user support for software, hardware, and network issues including system setup, installation, and maintenance. Collaborated with developers and IT teams to troubleshoot problems remotely and on-site.",
-        "bgColor": "#f0f7fd",
-        "borderColor": "#828280",
+        "bgColor": "#ffebeb",
+        "borderColor": "#b7a7b9",
         "textColor": "#0c0c0c",
-        "logo": "/images/yoma-logo.png"
+        "logo": "/images/mfu-logo.png",
+        "type": "Part-time"
       }
     ]
   },

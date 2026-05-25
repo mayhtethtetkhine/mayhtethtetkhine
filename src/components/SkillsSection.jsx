@@ -26,7 +26,7 @@ const SkillsSection = ({ data, tinytitle }) =>
             <h3 className="text-3xl md:text-5xl font-bold mb-10">{title}</h3>
             <div className="grid gap-10 items-start">
               {/* <p className="text-muted leading-relaxed">{description}</p> */}
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 px-10">
                 {tags.map((tag) => (
                   <Tag key={tag} label={tag} />
                 ))}

@@ -2,7 +2,7 @@ import Section from "./Section";
 import ExperienceCard from "./ExperienceCard";
 
 const ExperienceSection = ({ data, tinytitle }) => {
-  const { heading, headingAccent, headingSuffix, subheading, items } = data;
+  const { heading, headingAccent, headingSuffix, subheading, items, type } = data;
 
   return (
     <Section id="experience" title= {tinytitle}>
