@@ -81,7 +81,7 @@
         "color": "bg-primary/10",
         "description": "Various resampling algorithms are evaluated to address class imbalance and overlap within diverse synthetic datasets to improve classification performance. It aims to provide a deeper understanding of how dataset complexities and specific resampling methods impact model accuracy in real-world applications.",
         "bullets": [
-          "Synthesized imbalanced datasets of varying complexities to experiment with SMOTE, Borderline-SMOTE, and NB-Basic resampling methods.",
+          "Synthesized imbalance datasets of varying complexities to experiment with SMOTE, Borderline-SMOTE, and NB-Basic resampling methods.",
           "Discovered the dependency of overlap measurement effectiveness on data shape and encountered technical limits when attempting to reach 100% overlap.",
           "All planned combinations of data shapes and imbalance ratios were successfully generated and used to train and validate a Random Forest classification model."
         ],
@@ -162,7 +162,7 @@
           "RapidMiner",
           "Churn Analysis",
           "Classification",
-          "Imbalanced Data"
+          "Imbalance Data"
         ],
         "links": [
           {
@@ -216,7 +216,7 @@
         "position": "Data Scientist",
         "org": "Seagate Technology TH",
         "description": "Developing data-driven optimization and predictive modeling solutions for HDD manufacturing processes, applying machine learning, statistical modeling, and foundation models to analyze high-dimensional engineering data, reduce process variability, and improve manufacturing robustness and decision-making.",
-        "bgColor": "#eff7eb",
+        "bgColor": "#f3faf0",
         "textColor": "#0c0c0c",
         "logo": "/images/seagate-logo.png",
         "type": "Contract"
