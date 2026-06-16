@@ -61,29 +61,31 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
       <div className="hidden md:sticky md:flex top-20 z-20 flex justify-center mb-20">
         <div className="flex items-center gap-1 bg-background/60 border border-primary/5 rounded-full px-2 py-3 backdrop-blur-md shadow-[0_10px_35px_rgba(88,33,128,0.12)]">
           {projects.map(({ id, name }) => (
-          <button
-            key={id}
-            onClick={() => scrollToProject(id)}
-            className={`px-4 py-1.5 rounded-full text-xs tracking-wide transition-all duration-200 ${activeProject === id
+            <button
+              key={id}
+              onClick={() => scrollToProject(id)}
+              className={`px-4 py-1.5 rounded-full text-xs tracking-wide transition-all duration-200 ${activeProject === id
                 ? "bg-primary text-background font-semibold"
                 : "text-muted hover:text-text"
-              }`}
-          >
-            {name}
-          </button>
+                }`}
+            >
+              {name}
+            </button>
           ))}
         </div>
       </div>
 
       {/* Projects list */}
-      <div className="flex flex-col gap-32">
+      {/* <div className="flex flex-col gap-22"> */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col gap-15">
         {projects.map(({ id, name, subtitle, org, description, bullets, tags, links, color, image }) => (
           <div
             key={id}
             ref={(el) => (projectRefs.current[id] = el)}
-            className="grid md:grid-cols-2 gap-12 items-start"
+            // className="w-full rounded-3xl border border-text/10 bg-background/10 backdrop-blur-sm p-8 md:p-12"
+            className="w-full rounded-3xl bg-background/60 border border-primary/5 backdrop-blur-md p-8 md:p-12 shadow-[0_10px_35px_rgba(88,33,128,0.12)]"
           >
-            {/* Left — image */}
+            {/* Left — image
             <div className={`w-full aspect-[4/3] rounded-2xl ${color} border border-text/10 overflow-hidden`}>
               {image ? (
                 <img src={image} alt={name} className="w-full h-full object-cover" />
@@ -92,7 +94,7 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
                   Project screenshot
                 </div>
               )}
-            </div>
+            </div> */}
 
             {/* Right — content */}
             <div className="flex flex-col gap-5">
@@ -128,7 +130,8 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm text-text hover:text-primary transition-colors border-b border-text/20 hover:border-primary pb-0.5"
+                    // className="inline-flex items-center gap-1.5 text-sm text-text hover:text-primary transition-colors border-b border-text/20 hover:border-primary pb-0.5"
+                    className="inline-flex items-center gap-1.5 px-2 py-2 backdrop-blur-md font-bold hover:underline underline-offset-4 text-sm hover:text-primary transition-all duration-200"
                   >
                     {label}
                     <ArrowUpRight size={13} />

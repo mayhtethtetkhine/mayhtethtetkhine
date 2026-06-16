@@ -8,11 +8,11 @@
   "hero": {
     "heading": [
       "May H. H. Khine. ",
-      "½ data scientist, ½ engineer."
+      "Data Scientist & Engineer."
     ],
     "highlightWords": [
-      "data scientist",
-      "engineer"
+      "Data Scientist",
+      "Engineer"
     ],
     "bio": [
       "I work on data-driven systems for manufacturing and engineering applications, combining machine learning with practical optimization and experimentation.",
@@ -49,7 +49,8 @@
           "Cross Validation",
           "Statistical Testing",
           "Data Visualization",
-          "Robust Optimization"
+          "Robust Optimization",
+          "Foundation Models"
         ]
       },
       {
@@ -63,19 +64,6 @@
           "Supabase",
           "Firebase"
         ]
-      },
-      {
-        "title": "DevOps & Tools",
-        "description": "I'm comfortable with the full deployment side of things, containerizing with Docker, orchestrating with Kubernetes, setting up CI/CD pipelines, and working with message brokers like Kafka and RabbitMQ. I also build mobile apps with Flutter and handle payments with Stripe.",
-        "tags": [
-          "Docker",
-          "Kubernetes",
-          "Kafka",
-          "RabbitMQ",
-          "Git",
-          "Flutter",
-          "Stripe API"
-        ]
       }
     ]
   },
@@ -86,36 +74,37 @@
     "projects": [
       {
         "id": "synthetic",
-        "name": "Imbalance Classification",
+        "name": "Classification of Imbalance Datasets",
         "subtitle": "Resampler Benchmarking",
         "org": "AI/ML",
         "image": "",
         "color": "bg-primary/10",
-        "description": "A scalable peer tutoring platform with session management, financial dashboards, refund and report features, and payment integration.",
+        "description": "Various resampling algorithms are evaluated to address class imbalance and overlap within diverse synthetic datasets to improve classification performance. It aims to provide a deeper understanding of how dataset complexities and specific resampling methods impact model accuracy in real-world applications.",
         "bullets": [
-          "Developed tutor, student, and admin workflows with session management, financial dashboards, refund and report features, and Stripe PromptPay integration.",
-          "Integrated full-text search with indexing, notifications (Firebase), email (Resend), Google OAuth, real-time chat, and automated tasks with cron jobs.",
-          "Optimized performance with Supabase queues, server-side prefetching, and SSR for SEO."
+          "Synthesized imbalanced datasets of varying complexities to experiment with SMOTE, Borderline-SMOTE, and NB-Basic resampling methods.",
+          "Discovered the dependency of overlap measurement effectiveness on data shape and encountered technical limits when attempting to reach 100% overlap.",
+          "All planned combinations of data shapes and imbalance ratios were successfully generated and used to train and validate a Random Forest classification model."
         ],
         "tags": [
-          "Next.js",
-          "Supabase",
-          "Tailwind",
-          "Stripe",
-          "Firebase"
+          "Python",
+          "Synthetic Data",
+          "Classification",
+          "SMOTE",
+          "Resampling",
+          "Random Forest"
         ],
         "links": [
           {
             "label": "GitHub",
-            "href": "https://github.com/senior-pj-team/peer-tutoring"
+            "href": "https://github.com/KatieMarsh/synthetic-data.git"
           },
           {
-            "label": "Demo Video",
-            "href": "https://www.youtube.com/watch?v=eTrGNc-UiCI"
+            "label": "Read Paper",
+            "href": "https://drive.google.com/file/d/1GHE44MrwYRiVN61g79HTTfVFYPu2IRzv/view?usp=sharing"
           },
           {
-            "label": "Live",
-            "href": "https://peertube-digital.vercel.app/login"
+            "label": "Slides",
+            "href": "https://drive.google.com/file/d/1yLIta8b8sQKqW6_wdIiz_R4hH71g7vZV/view?usp=sharing"
           }
         ]
       },
@@ -146,9 +135,14 @@
             "href": "https://github.com/mayhtethtetkhine/License_plate_reader.git"
           },
           {
-            "label": "Document",
+            "label": "Read Document",
             "href": "https://drive.google.com/file/d/1W4zpOdjRKsgdWKDcnxSUn1FVuGLXukVW/view?usp=sharing"
+          },
+          {
+            "label": "Slides",
+            "href": "https://docs.google.com/presentation/d/1XwbG3pkOQbpNeLtVH_o8suvAaEtCewpo/edit?usp=sharing&ouid=104581161987429749111&rtpof=true&sd=true"
           }
+
         ]
       },
       {
@@ -204,7 +198,7 @@
           },
           {
             "label": "Slides",
-            "href": "https://docs.google.com/presentation/d/14M3_IrfiMWSFrFp2uRkWDXNKd-BweY5_/edit?usp=drive_link&ouid=104581161987429749111&rtpof=true&sd=true"
+            "href": "https://docs.google.com/presentation/d/14M3_IrfiMWSFrFp2uRkWDXNKd-BweY5_/edit?usp=sharing&ouid=104581161987429749111&rtpof=true&sd=true"
           }
         ]
       }
