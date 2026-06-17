@@ -10,7 +10,7 @@ const HeroSection = ({ data }) =>
     <section className="min-h-screen flex flex-col justify-end px-16 md:px-40 pb-24 pt-32">
       {/* <p className="text-xs tracking-[0.3em] text-primary uppercase mb-6">{badge}</p> */}
 
-      <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold leading-tight tracking-tight mb-10">
+      <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-tight tracking-tight mb-10">
         {heading.map((line, i) =>
         {
           const words = line.split(" ");

@@ -131,7 +131,7 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
                     target="_blank"
                     rel="noopener noreferrer"
                     // className="inline-flex items-center gap-1.5 text-sm text-text hover:text-primary transition-colors border-b border-text/20 hover:border-primary pb-0.5"
-                    className="inline-flex items-center gap-1.5 px-2 py-2 backdrop-blur-md font-bold hover:underline underline-offset-4 text-sm hover:text-primary transition-all duration-200"
+                    className="inline-flex items-center gap-1.5 font-bold text-sm hover:text-primary hover:border-b hover:border-primary transition-all duration-200"
                   >
                     {label}
                     <ArrowUpRight size={13} />
