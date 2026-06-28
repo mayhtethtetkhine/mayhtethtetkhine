@@ -40,7 +40,7 @@
         ]
       },
       {
-        "title": "Data Science",
+        "title": "Data Science & Analysis",
         "description": "I work heavily with benchmarking, variance analysis, statistical evaluation, temporal validation, and reproducible experimentation workflows for industrial datasets.",
         "tags": [
           "Feature Engineering",
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "title": "Databases",
+        "title": "Databases & Automation",
         "description": "",
         "tags": [
           "PostgreSQL",
@@ -62,7 +62,8 @@
           "MongoDB",
           "Redis",
           "Supabase",
-          "Firebase"
+          "Firebase",
+          "n8n"
         ]
       }
     ]
@@ -263,15 +264,11 @@
       },
       {
         "label": "Education",
-        "value": "B.Eng. (First Honor) Computer Engineering, Mae Fah Luang University"
-      },
-      {
-        "label": "Background Noise",
-        "value": "Video essays playing while my models train"
+        "value": "B.Eng. (First H.) Computer Engineering, Mae Fah Luang University"
       },
       {
         "label": "Current Interests",
-        "value": "Web Development, Management, Self-improvement"
+        "value": "AI Automation Tools, Web Development, Self-improvement"
       }
     ],
     "colleagueTags": [

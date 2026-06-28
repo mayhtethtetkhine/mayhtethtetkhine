@@ -9,23 +9,35 @@ import ConnectSection from "./components/ConnectSection";
 import data from "./data.json";
 
 const NAV_LINKS = [
-  { label: "Skills",      href: "what-i-do"      },
-  { label: "Projects",  href: "selected-work"  },
-  { label: "Experience",  href: "experience"     },
-  { label: "About me", href: "meet-you"     },
-  { label: "Contact",  href: "connect"        },
+  { label: "Skills", href: "what-i-do", icon: "Terminal" },
+  { label: "Projects", href: "selected-work", icon: "Folder" },
+  { label: "Experience", href: "experience", icon: "Briefcase" },
+  { label: "About me", href: "meet-you", icon: "UserRound" },
+  { label: "Contact", href: "connect", icon: "Mail" },
 ];
 
-function smoothScrollTo(id) {
+function smoothScrollTo(id)
+{
   const el = document.getElementById(id);
   if (el) el.scrollIntoView({ behavior: "smooth" });
 }
 
-export default function App() {
+export default function App()
+{
   const [active, setActive] = useState("");
 
-  useEffect(() => {
-    const observers = NAV_LINKS.map(({ href }) => {
+  useEffect(() =>
+  {
+    const handleScroll= ()=>{
+      if(window.scrollY < 300 ){
+        setActive("")
+      } 
+    }
+    // remove active link during hero section display
+    window.addEventListener("scroll", handleScroll, {passive: true})
+
+    const observers = NAV_LINKS.map(({ href }) =>
+    {
       const el = document.getElementById(href);
       if (!el) return null;
       const obs = new IntersectionObserver(
@@ -37,7 +49,10 @@ export default function App() {
       obs.observe(el);
       return obs;
     });
-    return () => observers.forEach((o) => o?.disconnect());
+    return () =>{
+      removeEventListener("scroll", handleScroll)
+      observers.forEach((o) => o?.disconnect());
+    }
   }, []);
 
   return (
@@ -53,12 +68,12 @@ export default function App() {
       </nav>
 
       {/* ── SECTIONS ── */}
-      <HeroSection        data={data.hero}       />
-      <SkillsSection      data={data.skills} tinytitle = {NAV_LINKS[0].label}    />
-      <SelectedWorkSection data={data.work}  tinytitle = {NAV_LINKS[1].label }   />
-      <ExperienceSection  data={data.experience} tinytitle = {NAV_LINKS[2].label} />
-      <AboutSection       data={data.about} tinytitle = {NAV_LINKS[3].label }  />
-      <ConnectSection     data={data.connect} email={data.meta.email} tinytitle = {NAV_LINKS[4].label} />
+      <HeroSection data={data.hero} />
+      <SkillsSection data={data.skills} tinytitle={NAV_LINKS[0].label} />
+      <SelectedWorkSection data={data.work} tinytitle={NAV_LINKS[1].label} />
+      <ExperienceSection data={data.experience} tinytitle={NAV_LINKS[2].label} />
+      <AboutSection data={data.about} tinytitle={NAV_LINKS[3].label} />
+      <ConnectSection data={data.connect} email={data.meta.email} tinytitle={NAV_LINKS[4].label} />
 
       {/* ── FOOTER ── */}
       <footer className="px-8 md:px-20 py-8 border-t border-text/10 flex items-center justify-between text-muted text-xs font-mono">

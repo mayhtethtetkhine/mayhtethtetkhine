@@ -23,7 +23,7 @@ const SkillsSection = ({ data, tinytitle }) =>
       <div className="flex flex-col">
         {items.map(({ title, description, tags }) => (
           <div key={title} className="py-14 border-t border-text/10">
-            <h3 className="text-3xl md:text-5xl font-bold mb-10">{title}</h3>
+            <h3 className="text-3xl md:text-5xl font-bold mb-10 px-10">{title}</h3>
             <div className="grid gap-10 items-start">
               {/* <p className="text-muted leading-relaxed">{description}</p> */}
               <div className="flex flex-wrap gap-4 px-10">
