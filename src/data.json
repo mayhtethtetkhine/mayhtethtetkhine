@@ -74,6 +74,34 @@
     "subheading": "A few projects I'm proud of, from university work to personal builds. Each one taught me something new.",
     "projects": [
       {
+        "id": "n8n",
+        "name": "Job Notifier",
+        "subtitle": "n8n Workflow Automation",
+        "org": "n8n",
+        "image": "/images/salary-prediction-cover.png",
+        "color": "bg-text/5",
+        "description": "An automated job notification pipeline built with n8n that scrapes, deduplicates, and delivers curated job listings via Telegram.",
+        "bullets": [
+          "Designed a multi-step n8n workflow that fetches job listings from external sources, cleans and normalizes data, and upserts records into a Supabase PostgreSQL database with conflict resolution to avoid duplicates.",
+          "Implemented a delivery tracking system using a boolean flag to ensure each job is only notified once, with automated status updates written back to the database after each Telegram dispatch.",
+          "Built a Telegram bot integration that summarizes new job openings grouped by seniority level, providing concise daily digests with role counts and direct job links."
+        ],
+        "tags": [
+          "n8n",
+          "Supabase",
+          "PostgreSQL",
+          "Telegram Bot",
+          "Workflow Automation",
+          "REST API"
+        ],
+        "links": [
+          {
+            "label": "Slides",
+            "href": "https://docs.google.com/presentation/d/1IEoSWyEXQ267GwXgxcolOlOUWuO35Ak2_cMDDb1SH6w/edit?usp=sharing"
+          }
+        ]
+      },
+      {
         "id": "synthetic",
         "name": "Classification of Imbalance Datasets",
         "subtitle": "Resampler Benchmarking",
@@ -109,7 +137,6 @@
           }
         ]
       },
-     
       {
         "id": "anpr",
         "name": "ANPR System",
@@ -130,7 +157,7 @@
           "OCR",
           "OpenCV"
         ],
-        "links": [ 
+        "links": [
           {
             "label": "GitHub",
             "href": "https://github.com/mayhtethtetkhine/License_plate_reader.git"
@@ -143,7 +170,6 @@
             "label": "Slides",
             "href": "https://docs.google.com/presentation/d/1XwbG3pkOQbpNeLtVH_o8suvAaEtCewpo/edit?usp=sharing&ouid=104581161987429749111&rtpof=true&sd=true"
           }
-
         ]
       },
       {
@@ -203,7 +229,7 @@
           }
         ]
       }
-     
+      
     ]
   },
   "experience": {

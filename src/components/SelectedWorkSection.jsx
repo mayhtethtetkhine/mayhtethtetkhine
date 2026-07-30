@@ -24,8 +24,6 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
     return () => observers.forEach((o) => o?.disconnect());
   }, [projects]);
 
-  // const scrollToProject = (id) =>
-  //   projectRefs.current[id]?.scrollIntoView({ behavior: "smooth" });
 
   const scrollToProject = (id) =>
   {
@@ -64,7 +62,7 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
             <button
               key={id}
               onClick={() => scrollToProject(id)}
-              className={`px-4 py-1.5 rounded-full text-xs tracking-wide transition-all duration-200 ${activeProject === id
+              className={`cursor-pointer px-4 py-1.5 rounded-full text-xs tracking-wide transition-all duration-200 ${activeProject === id
                 ? "bg-primary text-background font-semibold"
                 : "text-muted hover:text-text"
                 }`}
@@ -76,13 +74,11 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
       </div>
 
       {/* Projects list */}
-      {/* <div className="flex flex-col gap-22"> */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col gap-15">
         {projects.map(({ id, name, subtitle, org, description, bullets, tags, links, color, image }) => (
           <div
             key={id}
             ref={(el) => (projectRefs.current[id] = el)}
-            // className="w-full rounded-3xl border border-text/10 bg-background/10 backdrop-blur-sm p-8 md:p-12"
             className="w-full rounded-3xl bg-background/60 border border-primary/5 backdrop-blur-md p-8 md:p-12 shadow-[0_10px_35px_rgba(88,33,128,0.12)]"
           >
             {/* Left — image
@@ -130,7 +126,6 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    // className="inline-flex items-center gap-1.5 text-sm text-text hover:text-primary transition-colors border-b border-text/20 hover:border-primary pb-0.5"
                     className="inline-flex items-center gap-1.5 font-bold text-sm hover:text-primary border-b border-transparent hover:border-primary transition-colors duration-200 ease-in-out"
                   >
                     {label}

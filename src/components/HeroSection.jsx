@@ -3,11 +3,29 @@ import { TypeAnimation } from 'react-type-animation';
 import TypingLine from "./TypingLine";
 import { Download } from "lucide-react";
 
+const RESUME_FILENAME = "resume_30072026.pdf"; // DDMMYYYY
+
+const formatResumeDate = (filename) =>
+{
+  const match = filename.match(/(\d{2})(\d{2})(\d{4})/);
+  if (!match) return null;
+
+  const [, day, month, year] = match;
+  const date = new Date(`${year}-${month}-${day}`);
+
+  return date.toLocaleDateString("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+};
+
 
 const HeroSection = ({ data }) =>
 {
 
   const { heading, highlightWords, bio } = data;
+  const resumeUpdatedDate = formatResumeDate(RESUME_FILENAME);
 
   return (
     <section className="lg:min-h-screen md:min-h-[100svh] min-h-[90svh] flex flex-col justify-end px-10 md:px-40 pb-20 pt-2 md:pt-32">
@@ -55,15 +73,22 @@ const HeroSection = ({ data }) =>
       ))}
 
 
-      <a href="\document\resume.pdf" download="Resume_May_Htet_Htet_Khine.pdf">
-        <button
-          className="mt-10 inline-flex items-center gap-2 self-start px-6 py-3 text-sm font-medium tracking-wide border border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-200 rounded-none"
-        >
-          <Download size={15} strokeWidth={1.8} />
-          Download Résumé
-        </button>
-      </a>
+      <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 self-start">
+        <a href={`/document/${RESUME_FILENAME}`} download="Resume_May_Htet_Htet_Khine.pdf">
+          <button
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium tracking-wide border border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-200 rounded-none"
+          >
+            <Download size={15} strokeWidth={1.8} />
+            Download Résumé
+          </button>
+        </a>
 
+        {resumeUpdatedDate && (
+          <span className="text-xs text-muted">
+            Last commit: {resumeUpdatedDate}
+          </span>
+        )}
+      </div>
 
 
     </section>

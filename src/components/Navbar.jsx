@@ -138,9 +138,9 @@ const Navbar = ({ nav_links, activeLink, onLinkClick }) =>
           <li key={href}>
             <button
               onClick={() => onLinkClick(href)}
-              className={`uppercase text-xs tracking-[0.14em] transition-all duration-300 font-archivo cursor-pointer px-4 py-2 rounded-full ${activeLink === href
-                ? "bg-primary/10 text-primary font-bold backdrop-blur-md shadow-[0_4px_12px_rgba(88,33,128,0.14)]"
-                : "border-transparent text-muted hover:text-text hover:bg-primary/7 hover:shadow-[0_4px_12px_rgba(88,33,128,0.08)]"
+              className={`uppercase text-xs tracking-[0.14em] transition-all duration-300 font-archivo cursor-pointer px-2 py-2 rounded-lg ${activeLink === href
+                ? " text-primary font-bold backdrop-blur-md"
+                : "border-transparent text-muted hover:text-text "
                 }`}
             >
               {label}
@@ -201,7 +201,7 @@ const Navbar = ({ nav_links, activeLink, onLinkClick }) =>
                         onLinkClick(href);
                         setMenuOpen(false);
                       }}
-                      className={`flex items-center gap-3 px-5 py-3.5 text-left font-bold uppercase text-sm tracking-[0.14em] font-mono transition-all duration-200 border-r-2 ${activeLink === href
+                      className={`flex items-center gap-3 px-5 py-3.5 text-left font-bold uppercase text-sm tracking-[0.14em] font-mono transition-all duration-200 border-l-2 ${activeLink === href
                           ? "text-primary bg-primary/8 border-primary"
                           : "text-muted hover:text-text hover:bg-primary/5 border-transparent"
                         }`}
