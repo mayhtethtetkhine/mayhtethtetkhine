@@ -3,8 +3,6 @@ import { TypeAnimation } from 'react-type-animation';
 import TypingLine from "./TypingLine";
 import { Download } from "lucide-react";
 
-const RESUME_FILENAME = "resume_30072026.pdf"; // DDMMYYYY
-
 const formatResumeDate = (filename) =>
 {
   const match = filename.match(/(\d{2})(\d{2})(\d{4})/);
@@ -24,8 +22,8 @@ const formatResumeDate = (filename) =>
 const HeroSection = ({ data }) =>
 {
 
-  const { heading, highlightWords, bio } = data;
-  const resumeUpdatedDate = formatResumeDate(RESUME_FILENAME);
+  const { heading, highlightWords, bio, resumeUrl } = data;
+  const resumeUpdatedDate = formatResumeDate(resumeUrl);
 
   return (
     <section className="lg:min-h-screen md:min-h-[100svh] min-h-[90svh] flex flex-col justify-end px-10 md:px-40 pb-20 pt-2 md:pt-32">
@@ -74,9 +72,9 @@ const HeroSection = ({ data }) =>
 
 
       <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 self-start">
-        <a href={`/document/${RESUME_FILENAME}`} download="Resume_May_Htet_Htet_Khine.pdf">
+        <a href={`/document/${resumeUrl}`} download="Resume_May_Htet_Htet_Khine.pdf">
           <button
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium tracking-wide border border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-200 rounded-none"
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium tracking-wide border border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-200 rounded-none cursor-pointer"
           >
             <Download size={15} strokeWidth={1.8} />
             Download Résumé
