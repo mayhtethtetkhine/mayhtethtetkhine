@@ -6,57 +6,52 @@
     "footerNote": "Designed & built by R & M"
   },
   "hero": {
-    "resumeUrl":"resume_30072026.pdf",
-    "heading": [
-      "May H. H. Khine. ",
-      "Data Scientist & Engineer."
-    ],
-    "highlightWords": [
-      "Data Scientist",
-      "Engineer"
-    ],
+    "resumeUrl": "resume_30072026.pdf",
+    "heading": ["May H. Khine. ", "AI. Data. Product."],
+    "highlightWords": ["AI", "Data", "Product"],
     "bio": [
-      "I work on data-driven systems for manufacturing and engineering applications, combining machine learning with practical optimization and experimentation.",
-      "My work focuses on building predictive and reliable systems for real-world engineering and industrial optimization problems."
+      "I design and build data-driven solutions that improve decision-making and business processes. My interests span analytics, machine learning, AI applications, and product-focused problem solving."
     ]
   },
   "skills": {
     "heading": "Tools, Techniques",
     "headingAccent": "& Systems",
-    "subheading": "My work combines machine learning, experimentation, and engineering systems to solve reliability, optimization, and variability challenges in real-world environments.",
+    "subheading": "I build data-driven products and intelligent solutions using machine learning, analytics, experimentation, and modern software tools. My focus is on creating reliable, scalable, and impactful systems that solve real-world problems.",
     "items": [
       {
-        "title": "ML & Modeling",
-        "description": "I build predictive and robust machine learning pipelines for engineering and manufacturing applications, with a strong focus on variability, evaluation, and generalization under real-world conditions.",
+        "title": "Machine Learning & AI",
+        "description": "Building predictive models, AI-powered applications, and end-to-end machine learning workflows with an emphasis on performance, robustness, and practical deployment.",
         "tags": [
           "Scikit-learn",
           "XGBoost",
           "Random Forest",
-          "Chronos",
-          "TabPFN v2 v2.5",
           "PyMC",
+          "Chronos",
+          "TabPFN",
           "Optuna",
+          "MLflow",
           "Pandas",
           "NumPy"
         ]
       },
       {
-        "title": "Data Science & Analysis",
-        "description": "I work heavily with benchmarking, variance analysis, statistical evaluation, temporal validation, and reproducible experimentation workflows for industrial datasets.",
+        "title": "Analytics & Experimentation",
+        "description": "Applying statistical analysis, feature engineering, experimentation, and model evaluation to transform complex data into actionable insights and support data-driven decision making.",
         "tags": [
           "Feature Engineering",
+          "Statistical Analysis",
+          "Hypothesis Testing",
+          "Cross Validation",
           "Hyperparameter Optimization",
           "Monte Carlo Simulation",
-          "Cross Validation",
-          "Statistical Testing",
+          "Time Series",
           "Data Visualization",
-          "Robust Optimization",
           "Foundation Models"
         ]
       },
       {
-        "title": "Databases & Automation",
-        "description": "",
+        "title": "Data, Product & Development",
+        "description": "Working with databases, automation tools, and collaborative product workflows to build scalable data applications and streamline development processes.",
         "tags": [
           "PostgreSQL",
           "MySQL",
@@ -64,15 +59,19 @@
           "Redis",
           "Supabase",
           "Firebase",
-          "n8n"
+          "n8n",
+          "Git",
+          "Docker",
+          "REST APIs",
+          "Figma"
         ]
       }
     ]
   },
   "work": {
-    "heading": "Projects",
-    "headingAccent": "I chose to share. ",
-    "subheading": "A few projects I'm proud of, from university work to personal builds. Each one taught me something new.",
+    "heading": "Projects: ",
+    "headingAccent": "My favorite ones ",
+    "subheading": "Projects that showcase my experience in machine learning, analytics, automation, and software development from research prototypes to production-ready tools.",
     "projects": [
       {
         "id": "n8n",
@@ -81,11 +80,11 @@
         "org": "n8n",
         "image": "/images/salary-prediction-cover.png",
         "color": "bg-text/5",
-        "description": "An automated job notification pipeline built with n8n that scrapes, deduplicates, and delivers curated job listings via Telegram.",
+        "description": "An end-to-end job intelligence platform that automatically collects, processes, and delivers curated job opportunities through an automated data pipeline.",
         "bullets": [
-          "Designed a multi-step n8n workflow that fetches job listings from external sources, cleans and normalizes data, and upserts records into a Supabase PostgreSQL database with conflict resolution to avoid duplicates.",
-          "Implemented a delivery tracking system using a boolean flag to ensure each job is only notified once, with automated status updates written back to the database after each Telegram dispatch.",
-          "Built a Telegram bot integration that summarizes new job openings grouped by seniority level, providing concise daily digests with role counts and direct job links."
+          "Built an automated ETL pipeline using n8n that collects job postings from multiple sources, cleans and normalizes data, and synchronizes records into Supabase with duplicate detection.",
+          "Designed an event-driven notification workflow that tracks delivery status, ensuring each opportunity is sent exactly once through Telegram.",
+          "Developed a daily job digest with filtering, seniority grouping, and direct application links to improve job discovery."
         ],
         "tags": [
           "n8n",
@@ -109,7 +108,7 @@
         "org": "AI/ML",
         "image": "",
         "color": "bg-primary/10",
-        "description": "Various resampling algorithms are evaluated to address class imbalance and overlap within diverse synthetic datasets to improve classification performance. It aims to provide a deeper understanding of how dataset complexities and specific resampling methods impact model accuracy in real-world applications.",
+        "description": "A research project investigating how different resampling strategies affect machine learning performance on imbalanced datasets.",
         "bullets": [
           "Synthesized imbalance datasets of varying complexities to experiment with SMOTE, Borderline-SMOTE, and NB-Basic resampling methods.",
           "Discovered the dependency of overlap measurement effectiveness on data shape and encountered technical limits when attempting to reach 100% overlap.",
@@ -145,19 +144,13 @@
         "org": "Computer Vision",
         "image": "",
         "color": "bg-primary/5",
-        "description": "A computer vision system for automatic license plate recognition (ANPR) using YOLOv8 and OCR, designed to identify vehicles, localize license plates, and extract plate numbers from images.",
+        "description": "A computer vision application that detects vehicles, recognizes license plates, and extracts plate numbers using deep learning and OCR.",
         "bullets": [
-          "Built a desktop-based license plate recognition pipeline using Python, YOLOv8, and EasyOCR to detect vehicles, localize license plates, and extract plate text from images.",
-          "Developed an image preprocessing workflow including grayscale conversion, histogram equalization, sharpening, Gaussian blur, morphological closing, and noise reduction to improve OCR and detection performance under varying image conditions.",
-          "Implemented automated result logging with CSV export, annotated image generation, and a customtkinter interface for image upload, visualization, and end-to-end detection execution."
+          "Developed an end-to-end automatic license plate recognition system using YOLOv8 and EasyOCR.",
+          "Improved detection accuracy through image enhancement and preprocessing techniques.",
+          "Built a desktop application for image upload, visualization, and automated result export."
         ],
-        "tags": [
-          "Python",
-          "YOLOv8",
-          "Computer Vision",
-          "OCR",
-          "OpenCV"
-        ],
+        "tags": ["Python", "YOLOv8", "Computer Vision", "OCR", "OpenCV"],
         "links": [
           {
             "label": "GitHub",
@@ -180,7 +173,7 @@
         "org": "Business Data Analytics",
         "image": "",
         "color": "bg-primary/5",
-        "description": "A customer churn classification project focused on identifying customers at risk of leaving a bank using business analytics and machine learning techniques in a low-code environment.",
+        "description": "A customer analytics project that predicts churn risk to support customer retention strategies.",
         "bullets": [
           "Developed a churn prediction workflow in RapidMiner to classify customer retention risk using banking and demographic data.",
           "Handled class imbalance using MetaCost and cost-sensitive learning techniques, with a strong focus on improving prediction precision for business decision support.",
@@ -206,19 +199,13 @@
         "org": "AI/ML",
         "image": "/images/salary-prediction-cover.png",
         "color": "bg-text/5",
-        "description": "A binary classification model that predicts whether an individual's salary falls into a high- or low-income category using demographic and personal data.",
+        "description": "A machine learning application that predicts income categories using demographic data and evaluates model performance through statistical metrics.",
         "bullets": [
-          "Built and evaluated an Artificial Neural Network (ANN) classifier on a dataset of over 20,000 individuals using Python and Scikit-learn workflows.",
-          "Applied preprocessing and dimensionality reduction techniques including PCA, and experimented with ensemble strategies to improve model robustness and generalization.",
-          "Achieved an F1-score of 79.75% for the high-income class, with performance evaluated using confusion matrix analysis and classification metrics."
+          "Built and evaluated ANN-based classification models using Python and Scikit-learn.",
+          "Applied preprocessing, dimensionality reduction, and feature engineering to improve model performance.",
+          "Compared model performance using F1-score, confusion matrices, and classification metrics."
         ],
-        "tags": [
-          "Python",
-          "ANN",
-          "Classification",
-          "PCA",
-          "Scikit-learn"
-        ],
+        "tags": ["Python", "ANN", "Classification", "PCA", "Scikit-learn"],
         "links": [
           {
             "label": "GitHub",
@@ -230,20 +217,19 @@
           }
         ]
       }
-      
     ]
   },
   "experience": {
     "heading": "Professional & Research",
     "headingAccent": "Experience",
     "headingSuffix": "",
-    "subheading": "I've been working across industry and research roles applying machine learning, probabilistic modeling, and data analytics to solve complex engineering and manufacturing problems.",
+    "subheading": "Building data-driven solutions through analytics, machine learning, and software to solve real-world problems across industry and research.",
     "items": [
       {
         "period": "Aug 2025 - Present",
         "position": "Data Scientist",
         "org": "Seagate Technology TH",
-        "description": "Developing data-driven optimization and predictive modeling solutions for HDD manufacturing processes, applying machine learning, statistical modeling, and foundation models to analyze high-dimensional engineering data, reduce process variability, and improve manufacturing robustness and decision-making.",
+        "description": "Developing machine learning and analytics solutions for large-scale manufacturing data, transforming complex engineering information into actionable insights that support process optimization and operational decision-making.",
         "bgColor": "#f3faf0",
         "textColor": "#0c0c0c",
         "logo": "/images/seagate-logo.png",
@@ -253,7 +239,7 @@
         "period": "Jan 2025 - Apr 2025",
         "position": "Data Scientist Intern",
         "org": "Seagate Technology TH",
-        "description": "Developed Bayesian machine learning models using PyMC for drive failure root cause analysis, improving diagnostic reliability by 17% through probabilistic inference and engineering data analytics.",
+        "description": "Developed probabilistic machine learning models for root cause analysis, improving diagnostic reliability by 17% through Bayesian modeling and data-driven engineering insights.",
         "bgColor": "#f3faf0",
         "textColor": "#0c0c0c",
         "logo": "/images/seagate-logo.png",
@@ -263,7 +249,7 @@
         "period": "May 2021 - Jul 2022",
         "position": "Research Assistant",
         "org": "Mae Fah Luang University",
-        "description": "Developed machine learning and Bayesian models for nonlinear state estimation and prognostics, applying time-series analysis and statistical modeling to engineering research projects and peer-reviewed publications.",
+        "description": "Conducted research in machine learning, probabilistic modeling, and time-series analysis, contributing to engineering projects and peer-reviewed publications while developing reproducible analytical workflows.",
         "bgColor": "#ffebeb",
         "textColor": "#0c0c0c",
         "logo": "/images/mfu-logo.png",
@@ -272,46 +258,50 @@
     ]
   },
   "about": {
-    "heading": "Outside the",
-    "headingAccent": "experiments. ",
+    "heading": "Beyond the",
+    "headingAccent": "work.",
     "bio": [
-      "I'm May Htet Htet Khine, usually just called May. I come from a computer engineering background and currently work on data-driven manufacturing and machine learning research.",
-      "I like building systems that are reliable, understandable, and grounded in real constraints, not just models that look good in ideal conditions. Most of my work revolves around experimentation, optimization, and reducing variability in complex processes.",
-      "Outside of research, I enjoy picking up small practical skills, watching long-form commentary, and disappearing into engineering and technology rabbit holes."
+      "I'm May Htet Htet Khine, though most people call me May. I have a computer engineering background and enjoy using data and technology to solve complex problems and create meaningful solutions.",
+      "My work combines machine learning, analytics, and software development to transform data into insights, improve processes, and support better decisions.",
+      "Outside of work, I enjoy exploring new technologies, building side projects, and learning about how products and systems can be improved."
     ],
     "photo": "/images/my-photo.png",
     "facts": [
       {
         "label": "Based In",
-        "value": "Thailand, but open to global relocation"
+        "value": "Thailand · Open to global relocation",
+        "icon": "MapPin"
       },
       {
         "label": "Languages",
-        "value": "Burmese (native),  English (TOEIC 965), Thai (conversational)"
+        "value": "Burmese (Native), English (TOEIC 965), Thai (Conversational)",
+        "icon": "Languages"
       },
       {
         "label": "Education",
-        "value": "B.Eng. (First H.) Computer Engineering, Mae Fah Luang University"
+        "value": "B.Eng. Computer Engineering (First Class Honors)",
+        "icon": "GraduationCap"
       },
       {
-        "label": "Current Interests",
-        "value": "AI Automation Tools, Web Development, Self-improvement"
+        "label": "Exploring",
+        "value": "AI Automation, Product Development, Modern Web Technologies",
+        "icon": "Rocket"
       }
     ],
     "colleagueTags": [
-      "Dependable",
-      "Solution-oriented",
-      "Actively applies feedbacks",
       "Curious",
-      "Precise",
+      "Dependable",
+      "Analytical",
+      "Solution-oriented",
+      "Adaptable",
       "เมย์ พูดไทยเก่งมาก!"
     ]
   },
   "connect": {
     "heading": "I'm looking for",
     "headingAccent": "my next challenge.",
-    "subheading": "Whether it's data science, applied ML, research engineering, or an interesting technical problem, I'm always open to conversations and collaborations.",
-    "ctaLabel": " Start Chatting → ",
+    "subheading": "I'm currently seeking full-time opportunities in data science, AI, analytics, and product-focused roles. I'm open to relocation and always happy to connect about interesting opportunities.",
+    "ctaLabel": "Let's Connect →",
     "socialLinks": [
       {
         "label": "LinkedIn",
