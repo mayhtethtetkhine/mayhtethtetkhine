@@ -59,9 +59,9 @@ const ExperienceCard = ({ period, position, org, description, logo, type, textCo
       {/* node dot on the spine */}
       <div className="absolute left-[-4px] top-2 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-background" />
 
-      <div className="flex gap-5 md:gap-8">
-        {/* Logo column — beside content, not on top */}
-        <div className="shrink-0">
+      <div className="flex flex-col md:flex-row gap-3 md:gap-8">
+        {/* Logo column — hidden on mobile, shown beside content on desktop */}
+        <div className="hidden md:block shrink-0">
           {logo ? (
             <img
               src={logo}
@@ -77,14 +77,14 @@ const ExperienceCard = ({ period, position, org, description, logo, type, textCo
           )}
         </div>
 
-        {/* Content — always 2 rows: (period + type pill) then (position + org + desc) */}
+        {/* Content — fully vertical on mobile, 2-row layout on desktop */}
         <div className="flex-1 min-w-0">
-          {/* Row 1: period + glassy type pill */}
-          <div className="flex items-center gap-3 mb-3">
+          {/* Row 1: period + type pill — stacked on mobile, inline on desktop */}
+          <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-3 mb-3">
             <span className="text-sm text-muted tracking-wide">{period}</span>
             {type && (
               <div
-                className=" mx-0 md:mx-5 px-4 py-1 rounded-full text-xs font-medium tracking-wide backdrop-blur-md shadow-lg transition-all duration-300"
+                className="self-start md:mx-5 px-4 py-1 rounded-full text-xs font-medium tracking-wide backdrop-blur-md shadow-lg transition-all duration-300"
                 style={{
                   backgroundColor: "#ffffff70",
                   color: textColor || "#333",
