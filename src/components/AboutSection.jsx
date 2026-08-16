@@ -13,13 +13,13 @@ const AboutSection = ({ data, tinytitle }) => {
 
   return (
     <Section id="meet-you" title={tinytitle}>
-      <div className="mb-12 mx-0 md:mx-20 lg:mx-58">
+      <div className="mb-16 px-8 md:px-30">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           {heading} <span className="text-primary">{headingAccent}</span>
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start mx-0 md:mx-20 lg:mx-58">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start px-8 md:px-30">
         {/* Left — photo + bio */}
         <div className="flex flex-col gap-6">
           <div className="w-full aspect-[4/3] rounded-2xl bg-text/5 border border-text/10 overflow-hidden">

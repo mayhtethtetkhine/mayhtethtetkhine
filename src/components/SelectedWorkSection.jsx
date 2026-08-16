@@ -47,7 +47,7 @@ const SelectedWorkSection = ({ data, tinytitle }) =>
     <Section id="selected-work" title={tinytitle}>
 
       {/* Header */}
-      <div className="mb-16 mx-8 md:mx-58">
+      <div className="mb-16 px-8 md:px-30">
         <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
           {heading}<br />
           <span className="text-primary">{headingAccent}</span>
